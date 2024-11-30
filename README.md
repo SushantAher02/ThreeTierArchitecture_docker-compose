@@ -15,4 +15,18 @@ Ensure you have the following installed on your system:
 - Docker Compose: [Installation Guide](https://docs.docker.com/compose/install/)
 
 ## Repository Structure
+web
+  myhtmlcode
+    index.html
+  Dockerfile
+  default.conf
+app
+  myphpcode
+    index.php
+  Dockerfile
+db
+  Dockerfile
+  init.sh
+  init.sql
+  
 
