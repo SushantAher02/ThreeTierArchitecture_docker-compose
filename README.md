@@ -15,18 +15,23 @@ Ensure you have the following installed on your system:
 - Docker Compose: [Installation Guide](https://docs.docker.com/compose/install/)
 
 ## Repository Structure
-##web.
-  myhtmlcode.
-    index.html.
-  Dockerfile
-  default.conf
-##app
-  myphpcode
-    index.php
-  Dockerfile
-db
-  Dockerfile
-  init.sh
-  init.sql
+
+Here's a README.md that matches the provided folder structure:
+
+markdown
+Copy code
+# Three-Tier Architecture with Docker Compose
+
+This repository implements a three-tier architecture using Docker Compose, structured as follows:
+
+1. **Web Tier**: Serves as the frontend using Nginx to serve static content (e.g., HTML).
+2. **App Tier**: A backend powered by PHP to handle dynamic requests.
+3. **Database Tier**: A MySQL database for data persistence.
+
+## Folder Structure
+
+The repository is organized as follows:
+
+. ├── web/ # Web (Frontend) tier │ ├── myhtmlcode/ # Contains static HTML files │ │ └── index.html # Entry point for the frontend │ ├── Dockerfile # Dockerfile for the web service │ └── default.conf # Nginx configuration for the web server ├── app/ # Application (Backend) tier │ ├── myphpcode/ # Contains PHP files │ │ └── index.php # Entry point for the backend │ └── Dockerfile # Dockerfile for the app service ├── db/ # Database tier │ ├── Dockerfile # Dockerfile for the database service │ ├── init.sh # Script for initializing the database │ └── init.sql # SQL file for database schema and seed data ├── docker-compose.yml # Compose file to orchestrate all services └── README.md # Documentation
   
 
